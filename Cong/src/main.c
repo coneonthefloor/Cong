@@ -21,9 +21,11 @@ void Loop() {
 int main() {
 	int screenWidth = 640;
 	int screenHeight = 480;
-	//char windowTitle = "Cong";
-	InitWindow(screenWidth, screenHeight, "Cong");
-	SetTargetFPS(60);
+	int targetFrameRate = 60;
+	char windowTitle[] = "Cong";
+	
+	InitWindow(screenWidth, screenHeight, windowTitle);
+	SetTargetFPS(targetFrameRate);
 
 	Loop();
 
