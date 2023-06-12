@@ -2,9 +2,17 @@
 // Created by brian on 10/06/2023.
 //
 
-#ifndef CONG_MAIN_H
-#define CONG_MAIN_H
-
 #include <raylib.h>
+#include "pad.h"
+#include "ball.h"
 
-#endif //CONG_MAIN_H
+
+typedef struct {
+    Pad player1;
+    Pad player2;
+    Ball ball;
+} GameData;
+
+void Loop(GameData* data);
+void Update(GameData* data);
+void Draw(GameData* data);
