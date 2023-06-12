@@ -3,8 +3,7 @@ project(Cong LANGUAGES C)
 add_executable(Cong
         src/main.h
         src/main.c
-        # Add every file that we create as a new line here
-        )
+         "src/pad.h" "src/pad.c")
 
 # Set the compiler and linker to include Raylib
 target_include_directories(Cong PRIVATE ${raylib_INCLUDE_DIRS})
